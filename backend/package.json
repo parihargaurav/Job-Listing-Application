@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "import": "node importJobs.js"
-}
-,
+    "import": "node importJobs.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -14,7 +14,13 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://job-listing-application-4.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 // API Routes
@@ -32,4 +38,3 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
-
