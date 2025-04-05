@@ -10,7 +10,7 @@ function Home() {
   // Removed unused location state
 
   const fetchJobs = async (loc = '') => {
-    const res = await axios.get(`http://localhost:5000/api/jobs?location=${loc}`);
+    const res = await axios.get(`https://job-listing-application-1.onrender.com/api/jobs?location=${loc}`);
     setJobs(res.data);
     if (res.data.length > 0) {
       setSelectedJob(res.data[0]);
